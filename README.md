@@ -1,34 +1,33 @@
-Getting Started
----------------
+##Mongoose Data administration
 
-This project is an example server built using baucis.  To install:
+a [mongoose] example application whose data can be edited by [gform-admin].
 
-    git clone git@github.com:wprl/baucis-example.git
-    cd baucis-example
+### Installation
+
+
+    git clone git@github.com:stemey/mongoose-admin-example.git
+    cd mongoose-admin-example
     npm install
     node app
 
-Now that the server is running, make HTTP GET requests like:
 
-    http://localhost:3333/api/vegetables
-    http://localhost:3333/api/vegetables?conditions={ "name": "tomato" }
-    http://localhost:3333/api/vegetables?conditions={ "name": { "$regex": "t" } }
-    http://localhost:3333/api/vegetables?select=_id
-    http://localhost:3333/api/vegetables/<_id>
+The rest services are now listening on localhost:3333/
 
-Check out POST, PUT, HEAD, and DELETE requests as well…
 
-Swagger
--------
+Install [gform-admin] client as described. Open your browser to the location described there and start administrating your mongoose data.
 
-You can also use Swagger to interact with baucis:
+The default configuration of [gform-admin] already includes this server ([see here](http://github.com/stemey/gform-admin/blob/master/src/app/services.json)).
 
-First, download the [swagger-ui](https://github.com/wordnik/swagger-ui) client.
+### Architecture
 
-    git clone git@github.com:wordnik/swagger-ui.git
-    open swagger-ui/dist/index.html
+This application uses [mongoose] to create persistent models. Rest services for crud operations for these models are provided by [baucis].
+The models schemas and extra meta information are exposed via rest services by [baucis-gform].
+[gform-admin] dynamically generates master detail views based on the [gform] schemas provided by baucis-gform.
+This application uses CORS to allow xdomain access.
 
-Point it at your API.
 
-    http://localhost:3333/api/api-docs
-
+[gform]: (https://github.com/stemey/dojo-generate-form)
+[mongoose]: (https://github.com/LearnBoost/mongoose)
+[gform-admin]: (https://github.com/stemey/gform-admin)
+[baucis-gform]: (https://github.com/stemey/baucis-gform)
+[baucis]: (https://github.com/wprl/baucis)
