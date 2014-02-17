@@ -26,8 +26,8 @@ The models schemas and extra meta information are exposed via rest services by [
 This application uses CORS to allow xdomain access.
 
 
-[gform]: (https://github.com/stemey/dojo-generate-form)
-[mongoose]: (https://github.com/LearnBoost/mongoose)
-[gform-admin]: (https://github.com/stemey/gform-admin)
-[baucis-gform]: (https://github.com/stemey/baucis-gform)
-[baucis]: (https://github.com/wprl/baucis)
+[gform]: https://github.com/stemey/dojo-generate-form
+[mongoose]: https://github.com/LearnBoost/mongoose
+[gform-admin]: https://github.com/stemey/gform-admin
+[baucis-gform]: https://github.com/stemey/baucis-gform
+[baucis]: https://github.com/wprl/baucis
