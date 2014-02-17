@@ -13,6 +13,9 @@ a [mongoose] example application whose data can be edited by [gform-admin].
 
 The rest services are now listening on localhost:3333/
 
+Use [gform-admin](http://www.toobopnet/gform-admin/index.html) to browser and manage the application data
+
+or
 
 Install [gform-admin] client as described. Open your browser to the location described there and start administrating your mongoose data.
 
