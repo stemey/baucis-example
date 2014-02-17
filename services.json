@@ -1,0 +1,19 @@
+{
+    "services": [
+        {
+            "type": "app/service/BaucisCrudService",
+            "name": "blog (crud)",
+            "resources": {
+                "$ref": "http://localhost:3333/api/gform"
+            }
+        },
+        {
+            "type": "app/service/SwaggerMetaService",
+            "name": "blog (rest service)",
+            "apis": {
+                "$ref": "http://localhost:3333/api/api-docs"
+            }
+        }
+
+    ]
+}
