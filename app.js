@@ -3,7 +3,6 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var baucis = require('baucis');
-var swagger = require('baucis-swagger');
 
 // configure gform schema generator
 var gform = require('baucis-gform');
