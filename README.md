@@ -11,8 +11,6 @@ a [mongoose] example application whose data can be edited by [gform-admin].
     node app
 
 
-The rest services are now listening on localhost:3333/
-
 Use [gform-admin](http://www.toobop.net/gform-admin/index.html) to browser and manage the application data
 
 or
