@@ -11,7 +11,7 @@ a [mongoose] example application whose data can be edited by [gform-admin].
     node app
 
 
-Use [gform-admin](http://www.toobop.net/gform-admin/index.html) to browser and manage the application data
+Use [gform-admin](http://www.toobop.net/gform-admin/index.html) to browse and manage the application data
 
 or
 
