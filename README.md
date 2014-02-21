@@ -5,7 +5,7 @@ a [mongoose] example application whose data can be edited by [gform-admin].
 ### Installation
 
 
-    git clone git@github.com:stemey/mongoose-admin-example.git
+    git clone https://github.com/stemey/mongoose-administration-example.git
     cd mongoose-admin-example
     npm install
     node app
