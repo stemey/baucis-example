@@ -5,6 +5,8 @@ a [mongoose] example application whose data can be edited by [gform-admin].
 ### Installation
 
 Have [mongodb] installed and running on the standard port on localhost
+
+Install this application:
     
     git clone https://github.com/stemey/mongoose-administration-example.git
     cd mongoose-admin-example
