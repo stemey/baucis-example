@@ -13,15 +13,6 @@ gform.generatorProps = {groupCreator: creator};
 // initialize db
 require("./data");
 
-// configure gform schema generator
-var gform = require('baucis-gform');
-var TabGroupCreator = require('mongoose-schema/groupcreator/TabGroupCreator');
-var creator = new TabGroupCreator();
-gform.generatorProps = {groupCreator: creator};
-
-// initialize db
-require("./data");
-
 // __Main Program__
 
 // Connect to the Mongo instance
