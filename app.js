@@ -3,12 +3,14 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var baucis = require('baucis');
+var Api = require('baucis/Api');
 
 // configure gform schema generator
-var gform = require('baucis-gform');
+var Gform = require('baucis-gform');
 var TabGroupCreator = require('mongoose-schema/groupcreator/TabGroupCreator');
 var creator = new TabGroupCreator();
-gform.generatorProps = {groupCreator: creator};
+
+var gform = new Gform({basePath:"/api", generatorProps:{groupCreator: creator}});
 
 // initialize db
 require("./data");
@@ -38,8 +40,11 @@ baucis.rest('BlogPost');
 var app = express();
 app.use(allowCrossDomain);
 app.use('/api', baucis());
+gform.start(app);
 app.use("/client", express.static("client"));
 app.listen(3333);
+
+
 
 console.log('Server listening on port 3333.');
 
