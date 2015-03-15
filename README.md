@@ -4,14 +4,17 @@ a [mongoose] example application whose data can be edited by [gform-admin].
 
 ### Installation
 
+Have [mongodb] installed and running on the standard port on localhost
 
-    git clone git@github.com:stemey/mongoose-admin-example.git
+Install this application:
+    
+    git clone https://github.com/stemey/mongoose-administration-example.git
     cd mongoose-admin-example
     npm install
     node app
 
 
-Use [gform-admin](http://www.toobop.net/gform-admin/index.html) to browser and manage the application data
+Use [gform-admin](http://www.toobop.net/gform-admin/index.html) to browse and manage the application data
 
 or
 
@@ -28,6 +31,7 @@ This application uses CORS to allow xdomain access.
 
 
 [gform]: https://github.com/stemey/dojo-generate-form
+[mongodb]: http://docs.mongodb.org/manual/installation/
 [mongoose]: https://github.com/LearnBoost/mongoose
 [gform-admin]: https://github.com/stemey/gform-admin
 [baucis-gform]: https://github.com/stemey/baucis-gform
